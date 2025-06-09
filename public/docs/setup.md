@@ -1,4 +1,4 @@
-# Usage
+# Setup
 
 To use the library:
 

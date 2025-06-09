@@ -1,0 +1,43 @@
+{
+  "name": "processm.net-docs",
+  "version": "1.0.0",
+  "description": "This is a webpage containing the documentation for the ProcessM.Net - an open-source process mining library built in C#.",
+  "main": "index.js",
+  "keywords": [
+    "process mining",
+    "documentation",
+    "open source",
+    "C#"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZirkonCZ/ProcessM.NET-Docs.git"
+  },
+  "author": "ZirkonCZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZirkonCZ/ProcessM.NET-Docs/issues"
+  },
+  "homepage": "https://github.com/ZirkonCZ/ProcessM.NET-Docs#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "@tailwindcss/vite": "^4.1.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
+  }
+}

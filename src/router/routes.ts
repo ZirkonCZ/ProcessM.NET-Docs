@@ -19,12 +19,16 @@ const MainLayoutRoutes: RouteObject[] = [
         Component: AboutPage,
     },
     {
+        path: "setup",
+        Component: SetupPage,
+    },
+    {
         path: "docs",
         Component: DocsPage,
     },
     {
-        path: "setup",
-        Component: SetupPage,
+        path: "usage",
+        Component: NotFound,
     },
     {
         path: "contact",

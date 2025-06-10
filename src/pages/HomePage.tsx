@@ -1,3 +1,4 @@
+import DocPage from "@/components/DocPage";
 import { FC } from "react";
 
 const HomePage: FC = () => {

@@ -8,7 +8,7 @@ export default function Navbar() {
         <aside className="h-16 bg-gray-100 dark:bg-gray-800 p-4 flex justify-between gap-4">
             <Link
                 to="/"
-                className="text-xl font-extrabold mr-4"
+                className="text-xl font-extrabold mr-4 text-tertiary"
             >
                 ProcessM.NET
             </Link>

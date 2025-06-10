@@ -7,7 +7,7 @@ const NotFoundPage: FC = () => {
             <h1 className="content__header text-3xl">Oops...</h1>
             <p className="content__code">404</p>
             <p className="content__desc">Page not found</p>
-            <Link to="/" className="content__link text-blue-500 font-bold hover:underline">
+            <Link to="/" className="routelink">
                 Go to homepage
             </Link>
         </div>

@@ -18,6 +18,7 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-tertiary: var(--tertiary);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
@@ -53,6 +54,7 @@
   --primary-foreground: oklch(0.985 0.001 106.423);
   --secondary: oklch(0.97 0.001 106.424);
   --secondary-foreground: oklch(0.216 0.006 56.043);
+  --tertiary: oklch(0.598 0.203 264.376);
   --muted: oklch(0.97 0.001 106.424);
   --muted-foreground: oklch(0.553 0.013 58.071);
   --accent: oklch(0.97 0.001 106.424);
@@ -87,6 +89,7 @@
   --primary-foreground: oklch(0.216 0.006 56.043);
   --secondary: oklch(0.268 0.007 34.298);
   --secondary-foreground: oklch(0.985 0.001 106.423);
+  --tertiary: oklch(0.598 0.203 264.376);
   --muted: oklch(0.268 0.007 34.298);
   --muted-foreground: oklch(0.709 0.01 56.259);
   --accent: oklch(0.268 0.007 34.298);
@@ -116,5 +119,39 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .h1 {
+    @apply text-3xl;
+    @apply font-bold mb-4;
+  }
+
+  .p {
+    @apply mb-8;
+    @apply leading-7;
+    @apply text-justify;
+  }
+
+  .article {
+    @apply max-w-2xl;
+    @apply mx-auto;
+    @apply p-8;
+  }
+  
+  .hyperlink {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+    @apply text-primary underline-offset-4 italic transition-colors;
+    @apply hover:text-(--tertiary);
+  }
+
+  .routelink {
+    @apply text-tertiary font-bold hover:underline;
+  }
+
+  .ul {
+    @apply list-disc list-inside;
+    @apply mb-8 pl-2;
   }
 }

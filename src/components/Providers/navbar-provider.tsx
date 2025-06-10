@@ -1,5 +1,4 @@
 export const navbarItems = [
-  { value: "/", label: "ProcessM.NET" },
   { value: "/about", label: "About" },
   { value: "/setup", label: "Setup" },
   { value: "/docs", label: "Documentation" },

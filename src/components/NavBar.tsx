@@ -5,21 +5,29 @@ import { NavbarCombobox } from '@/components/NavbarCombobox';
 
 export default function Navbar() {
     return (
-        <aside className="h-16 bg-gray-100 dark:bg-gray-800 p-4 flex flex-row justify-end md:justify-between gap-4">
-            <div className="hidden md:flex items-center gap-8">
-                {navbarItems.map(item => (
-                  <Link
-                    key={item.value}
-                    to={item.value}
-                    className={item.value === "/" ? "text-xl font-extrabold mr-4" : "block hover:underline"}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-            </div>
-            <DarkmodeToggle />
-            <div className="md:hidden">
-              <NavbarCombobox/>
+        <aside className="h-16 bg-gray-100 dark:bg-gray-800 p-4 flex justify-between gap-4">
+            <Link
+                to="/"
+                className="text-xl font-extrabold mr-4"
+            >
+                ProcessM.NET
+            </Link>
+            <div className="flex gap-8">
+                <div className="hidden md:flex items-center gap-8">
+                    {navbarItems.map(item => (
+                        <Link
+                            key={item.value}
+                            to={item.value}
+                            className="block hover:underline"
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
+                </div>
+                <DarkmodeToggle />
+                <div className="md:hidden">
+                    <NavbarCombobox/>
+                </div>
             </div>
         </aside>
     );

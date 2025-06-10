@@ -1,21 +1,27 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import DocPage from './components/DocPage';
 import DocsPage from '@/pages/DocsPage';
-import NavBar from './components/NavBar';
+import router from "./router";
+import Navbar from './components/Navbar';
+import { ThemeProvider } from './components/Providers/theme-provider';
+import {RouterProvider} from "react-router-dom";
+
 
 function App() {
     return (
-        <div className="min-h-screen">
-        <NavBar />
-            <main className="flex-1 p-6">
-            <Routes>
-                <Route path="/" element={<DocPage file="intro.md" />} />
-                <Route path="/about" element={<DocPage file="about.md" />} />
-                <Route path="/setup" element={<DocPage file="setup.md" />} />
-                <Route path="/sidebar" element={<DocsPage />} />
-            </Routes>
-            </main>
-        </div>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <div className="min-h-screen">
+                <main>
+                    <RouterProvider router={router} />
+                    {/* <Routes>
+                        <Route path="/" element={<DocPage file="intro.md" />} />
+                        <Route path="/about" element={<DocPage file="about.md" />} />
+                        <Route path="/setup" element={<DocPage file="setup.md" />} />
+                        <Route path="/sidebar" element={<DocsPage />} />
+                    </Routes> */}
+                </main>
+            </div>
+        </ThemeProvider>
     );
 }
 

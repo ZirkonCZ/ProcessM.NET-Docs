@@ -3,7 +3,7 @@ import { FC } from "react";
 const SetupPage: FC = () => {
     return (
         <div className="article">
-            <h1 className="h1">Run ProcessM.NET locally</h1>
+            <h1 className="h1">Setup ProcessM.NET locally</h1>
             
             <h2 className="h2">Prerequisites</h2>
             <ul className="ul">

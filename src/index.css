@@ -160,12 +160,17 @@
     @apply mb-8 pl-2;
   }
   
+  .ul2 {
+    @apply list-[circle] list-inside;
+    @apply mt-4 mb-4 pl-4;
+  }
+
   .ol {
     @apply list-decimal list-inside;
     @apply mb-8 pl-2;
   }
 
   .li {
-    @apply mb-2;
+    @apply mb-4;
   }
 }

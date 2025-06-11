@@ -9,7 +9,7 @@ const AboutPage: FC = () => {
                 <b>ProcessM.NET</b> is a <b>C# library</b> designed to support basic process mining algorithms within the <b>.NET framework</b>. It is an open-source project released under the <b>GPL-3.0 license.</b>
             </p>
             <p className="p">
-                The library is intended for use primarily in academia and is being developed with future applications in industry in mind. The development is carried out by the <a href="https://lasaris.fi.muni.cz" className="hyperlink">Lab of Software Architectures and Information Systems</a>, or as an abbreviation: Lasaris lab, Faculty of Informatics, Masaryk University.
+                The library is intended for use primarily in academia and is being developed with future applications in industry in mind. The development is carried out by the <a href="https://lasaris.fi.muni.cz" className="hyperlink">Lab of Software Architectures and Information Systems</a>, or as an abbreviation: <b>Lasaris lab</b>, Faculty of Informatics, Masaryk University.
             </p>
             <p className="p">
                 ProcessM.NET provides functionalities for core process mining concepts, including <b>process discovery and conformance checking</b>. It implements both imperative and declarative process mining approaches. Specific algorithms supported include the <b>Alpha algorithm</b>, Heuristic miner for imperative discovery, and <b>Optimal alignments</b> for imperative conformance checking. For declarative process mining, it supports discovery and conformance checking based on the <b>DECLARE Language</b> and its templates.

@@ -18,10 +18,10 @@ const SetupPage: FC = () => {
             <h2 className="h2">Steps</h2>
             <ol className="ol">
                 <li className="li">
-                    In the root directory run <code>docker compose up -d</code>. This creates the docker containers and runs them in 'detached' mode.
+                    In the root directory run <code className="code">docker compose up -d</code>. This creates the docker containers and runs them in 'detached' mode.
                 </li>
                 <li className="li">
-                    Go to http://localhost:8081 and <b>start mining!</b>
+                    Go to <code className="code">http://localhost:8081</code> and <b>start mining!</b>
                 </li>
             </ol>
         </div>

@@ -49,10 +49,8 @@ const ContactPage: FC = () => {
                 </button>
 
                 <div className="max-w-xl mx-auto my-8 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
-                    <h2 className="text-xl font-semibold mb-2">Our Contact Information</h2>
-                    <p><strong>Email:</strong> lasaris@fi.muni.cz</p>
-                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                    <p><strong>Address:</strong> 123 Main St, Suite 400, Springfield, USA</p>
+                    <h2 className="text-xl font-semibold mb-4 text-center">Contact Info</h2>
+                    <p><a href="mailto:lasaris@fi.muni.cz">lasaris@fi.muni.cz</a></p>
                 </div>
             </form>
         </div>

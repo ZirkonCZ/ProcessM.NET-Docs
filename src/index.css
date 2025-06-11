@@ -118,7 +118,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
   }
 }
 
@@ -137,6 +137,15 @@
     @apply mb-8;
     @apply leading-7;
     @apply text-justify;
+  }
+
+  .code {
+    @apply bg-gray-200 dark:bg-gray-700;
+  }
+
+  .homepage {
+    @apply max-w-xl;
+    @apply items-center;
   }
 
   .article {

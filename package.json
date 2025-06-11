@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ZirkonCZ/ProcessM.NET-Docs#readme",
   "dependencies": {
+    "@fontsource/inter": "^5.2.6",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@radix-ui/react-popover": "^1.1.14",

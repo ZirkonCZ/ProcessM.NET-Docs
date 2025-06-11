@@ -27,7 +27,7 @@ const MainLayoutRoutes: RouteObject[] = [
         Component: DocsPage,
     },
     {
-        path: "usage",
+        path: "404",
         Component: NotFound,
     },
     {

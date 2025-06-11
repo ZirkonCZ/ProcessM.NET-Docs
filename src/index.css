@@ -125,6 +125,11 @@
 @layer components {
   .h1 {
     @apply text-3xl;
+    @apply font-bold mb-6;
+  }
+
+  .h2 {
+    @apply text-2xl;
     @apply font-bold mb-4;
   }
 
@@ -153,5 +158,14 @@
   .ul {
     @apply list-disc list-inside;
     @apply mb-8 pl-2;
+  }
+  
+  .ol {
+    @apply list-decimal list-inside;
+    @apply mb-8 pl-2;
+  }
+
+  .li {
+    @apply mb-2;
   }
 }

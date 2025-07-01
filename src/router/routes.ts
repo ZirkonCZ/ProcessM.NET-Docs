@@ -5,6 +5,7 @@ import {lazy} from "react";
 
 const NotFound = lazy(() => import("@/pages/NotFoundPage"));
 const SetupPage = lazy(() => import("@/pages/SetupPage"));
+const AppPage = lazy(() => import("@/pages/AppPage"));
 const DocsPage = lazy(() => import("@/pages/DocsPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
 const ContactPage = lazy(() => import("@/pages/ContactPage"));
@@ -19,16 +20,16 @@ const MainLayoutRoutes: RouteObject[] = [
         Component: AboutPage,
     },
     {
+        path: "app",
+        Component: AppPage,
+    },
+    {
         path: "setup",
         Component: SetupPage,
     },
     {
         path: "docs",
         Component: DocsPage,
-    },
-    {
-        path: "404",
-        Component: NotFound,
     },
     {
         path: "contact",

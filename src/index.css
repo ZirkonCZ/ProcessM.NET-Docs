@@ -133,6 +133,16 @@
     @apply font-bold mb-4;
   }
 
+  .h3 {
+    @apply text-xl;
+    @apply font-bold mb-4;
+  }
+
+  .h4 {
+    @apply text-lg;
+    @apply font-semibold mb-2;
+  }
+
   .p {
     @apply mb-8;
     @apply leading-7;
@@ -164,6 +174,12 @@
     @apply text-tertiary font-bold hover:underline;
   }
 
+  .screenshot {
+    @apply w-full h-auto;
+    @apply rounded-lg;
+    @apply mb-12;
+  }
+
   .ul {
     @apply list-disc list-inside;
     @apply mb-8 pl-2;
@@ -180,6 +196,6 @@
   }
 
   .li {
-    @apply mb-4;
+    @apply mb-4 leading-7;
   }
 }

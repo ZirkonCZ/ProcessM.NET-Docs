@@ -18,7 +18,7 @@ export default function Navbar() {
                         <Link
                             key={item.value}
                             to={item.value}
-                            className="block hover:underline"
+                            className="block underline-offset-4 hover:underline"
                         >
                             {item.label}
                         </Link>

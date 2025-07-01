@@ -131,7 +131,7 @@ export function DocsSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) 
                   <GalleryVerticalEnd className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">ProcessM.NET</span>
+                  <span className="font-medium">ProcessM.NET Docs </span>
                   <span className="">v1.0.0</span>
                 </div>
               </a>

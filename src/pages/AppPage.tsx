@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import { DocsSidebar } from "@/components/docs-sidebar"
+import { AppSidebar } from "@/components/app-sidebar"
 import { Separator } from "@/components/ui/separator"
 import {
   SidebarInset,
@@ -23,18 +23,18 @@ const AppPage: FC = () => {
 				} as React.CSSProperties
 			}
 		>
-			<DocsSidebar />
+			<AppSidebar />
 			<SidebarInset>
 				<header className="flex h-16 shrink-0 items-center gap-2 px-4">
-				<SidebarTrigger className="-ml-1" />
-				<Separator
-					orientation="vertical"
-					className="mr-2 data-[orientation=vertical]:h-4"
-				/>
+					<SidebarTrigger className="-ml-1" />
+					<Separator
+						orientation="vertical"
+						className="mr-2 data-[orientation=vertical]:h-4"
+					/>
 				</header>
-				
-				<div className="article">
-					<h1 className="h1">Use ProcessM.NET in the web app</h1>
+
+				<div className="article article--large">
+					<h1 className="h1" id="heading">Use ProcessM.NET in the web app</h1>
 					<p className="p">
 						You can use the ProcessM.NET library through the <b>web application</b>, which features a clean, minimal interface and intuitive functionality designed for ease of use.
 					</p>
@@ -45,39 +45,40 @@ const AppPage: FC = () => {
 						Everything you need is dockerized, so you can mine your processes without ever needing any special dependencies on your machine.
 					</p>
 					
-					<h2 className="h2">All it takes is to:</h2>
+					<h2 className="h2" id="all-it-takes-is-to">All it takes is to:</h2>
 					<ul className="ul">
-						<li className="li">
+						<li className="li" id="clone-repository">
 							<a href="https://github.com/KovacFilip/ProcessM.NET" className="hyperlink">clone this repository</a>,
-							</li>
-						<li className="li">
+						</li>
+						<li className="li" id="docker-compose">
 							run the docker container via <code className="code">docker compose up</code> in your terminal,
 						</li>
-						<li className="li">
+						<li className="li" id="open-app">
 							open the app in your web browser at <code className="code">http://localhost:8081</code>, and you can start mining your processes right away!
 						</li>
 					</ul>
 					
-					<h2 className="h2">Introduction</h2>
-					<h3 className="h3">Landing page</h3>
+					<h2 className="h2" id="introduction">Introduction</h2>
+					
+					<h3 className="h3" id="landing-page">Landing page</h3>
 					<p className="p">
 						This is an introductory page that welcomes you to the app once you open it. 
 					</p>
 					<img src={landingPage} alt="Landing page screenshot" className="screenshot" />
 					
-					<h3 className="h3">Logs page</h3>
+					<h3 className="h3" id="logs-page">Logs page</h3>
 					<p className="p">
 						This is a core page where you browse all your event logs. You can upload new logs, mine existing ones or delete them.
 					</p>
 					<img src={logsPage} alt="Logs page screenshot" className="screenshot" />
 				
-					<h3 className="h3">Logs operations</h3>
+					<h3 className="h3" id="logs-operations">Logs operations</h3>
 					<p className="p">
 						With every event log you can perform various operations. You can mine the log with the imperative methods such as <b>Alpha mining</b> or <b>Heuristic mining</b>, or you can choose the <b>Declarative discovery</b> algorithm. Additionally, you can visualize the process model via the generated graph.
 					</p>
 					<img src={logsOperations} alt="Logs operations screenshot" className="screenshot" />
 					
-					<h4 className="h4">Imperative mining</h4>
+					<h4 className="h4" id="imperative-mining">Imperative mining</h4>
 					<p className="p">
 						Because the Alpha algorithm and Heuristic algorithm share the similar structure, we provide the example of the more advanced <b>Heuristic mining</b>.
 					</p>
@@ -100,7 +101,7 @@ const AppPage: FC = () => {
 					</ul>
 					<img src={heuristicMining} alt="Heuristic mining screenshot" className="screenshot" />
 					
-					<h4 className="h4">Declarative discovery</h4>
+					<h4 className="h4" id="declarative-discovery">Declarative discovery</h4>
 					<p className="p">
 						Selecting this process mining method takes you through a step-by-step form that simplifies the entire workflow.
 					</p>
@@ -119,7 +120,7 @@ const AppPage: FC = () => {
 					</p>
 					<img src={declarativeDiscovery} alt="Declarative discovery screenshot" className="screenshot" />
 
-					<h3 className="h3">Optimal Alignment Check</h3>
+					<h3 className="h3" id="optimal-alignment-check">Optimal Alignment Check</h3>
 					<p className="p">
 						When the user chooses to perform optimal alignment on an imperative process model, they are directed to a page where they can import a trace. The trace can be selected either from a newly uploaded CSV file or from an already imported event log.
 					</p>
@@ -131,7 +132,7 @@ const AppPage: FC = () => {
 					</p>
 					<img src={optimalAlignmentAndGraph} alt="Optimal Alignment and graph screenshot" className="screenshot" />
 					
-					<h3 className="h3">DECLARE Conformance Check</h3>
+					<h3 className="h3" id="declare-conformance-check">DECLARE Conformance Check</h3>
 					<p className="p">
 						The DECLARE conformance checking process closely follows the workflow of optimal alignments conformance checking from a user interface perspective. The user starts by importing traces from an event log, which are then displayed in a table on the page.
 					</p>

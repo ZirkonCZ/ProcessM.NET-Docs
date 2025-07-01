@@ -124,29 +124,28 @@
 
 @layer components {
   .h1 {
-    @apply text-3xl;
-    @apply font-bold mb-6;
+    @apply text-3xl font-bold;
+    @apply mb-6;
   }
 
   .h2 {
-    @apply text-2xl;
-    @apply font-bold mb-4;
+    @apply text-2xl font-bold;
+    @apply mb-4;
   }
 
   .h3 {
-    @apply text-xl;
-    @apply font-bold mb-4;
+    @apply text-xl font-bold;
+    @apply mb-4;
   }
 
   .h4 {
-    @apply text-lg;
-    @apply font-semibold mb-2;
+    @apply text-lg font-semibold;
+    @apply mb-2;
   }
 
   .p {
+    @apply text-justify leading-7;
     @apply mb-8;
-    @apply leading-7;
-    @apply text-justify;
   }
 
   .code {
@@ -159,9 +158,13 @@
   }
 
   .article {
-    @apply max-w-2xl;
-    @apply mx-auto;
-    @apply p-8;
+    @apply max-w-2xl mx-auto;
+    @apply px-8;
+  }
+ 
+  .article--large {
+    @apply max-w-4xl;
+    @apply px-16;
   }
   
   .hyperlink {
@@ -171,7 +174,8 @@
   }
 
   .routelink {
-    @apply text-tertiary font-bold hover:underline;
+    @apply text-tertiary font-bold;
+    @apply hover:underline;
   }
 
   .screenshot {
@@ -196,6 +200,7 @@
   }
 
   .li {
-    @apply mb-4 leading-7;
+    @apply leading-7;
+    @apply mb-4;
   }
 }
